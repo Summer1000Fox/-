@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择网点</title>
+</head>
+<body>
+尊敬的客户您好,由于您尚未与银行网点进行绑定,所以需要绑定!
+	<form action="{:U('selectoffice')}" method="get">
+		根据网点名字进行搜索
+		<input type="text" name="oname" />	
+		<input type="submit" value="搜索">
+	</form>
+	网点列表
+	<form action="{:U('selectoffice')}" method="post">
+
+		<notempty name="officelist">
+			<foreach name = "officelist" item = "officelistval" >
+				<input name="websiteid" type="radio" value="{$officelistval.wid}" />{$officelistval.oname}<br/>
+			</foreach>
+		<else />
+			该网点尚未创建微站,敬请期待
+		</notempty>
+		<input type="submit" value="绑定网点">
+	</form>
+</body>
+</html>

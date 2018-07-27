@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>这里是后台管理首页,您现在访问的是Ht模块的Index控制器

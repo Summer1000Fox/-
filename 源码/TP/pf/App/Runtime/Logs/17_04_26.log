@@ -1,0 +1,21 @@
+[ 2017-04-26T12:13:49+08:00 ] ::1 /QHKJ/pf/Ht/Admin/Admin/index
+ERR: 非法操作:Admin
+
+[ 2017-04-26T12:14:26+08:00 ] ::1 /QHKJ/pf/Ht/Admin/Admin/index
+ERR: 非法操作:Admin
+
+[ 2017-04-26T12:14:59+08:00 ] ::1 /QHKJ/pf/Ht/Admin/Ht/Admin/index
+ERR: 非法操作:Ht
+
+[ 2017-04-26T13:13:18+08:00 ] ::1 /QHKJ/pf/Ht/notice/index.html
+ERR: 无法加载控制器:Notice
+
+[ 2017-04-26T13:13:24+08:00 ] ::1 /QHKJ/pf/Ht/manager/index_user.html
+ERR: 无法加载控制器:Manager
+
+[ 2017-04-26T13:13:28+08:00 ] ::1 /QHKJ/pf/Ht/goods/index.html
+ERR: 无法加载控制器:Goods
+
+[ 2017-04-26T17:54:35+08:00 ] ::1 /QHKJ/pf/Ht/goods/index.html
+ERR: 无法加载控制器:Goods
+

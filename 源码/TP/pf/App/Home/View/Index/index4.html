@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{$officelist.oname}的微站</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="__PUBLIC__/qt/template/template4/css/swiper.min.css" type="text/css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height:100%;
+    }
+	a{text-decoration:none;}
+	.cf:before,.cf:after{content:"";display:table;} 
+	.cf:after{clear:both;}
+	.cf{*zoom:1;}
+    body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+	ul,li{list-style:none;margin:0;padding:0;}
+    .swiper-container {
+        width: 100%;        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+		position:relative;
+    }
+	.swiper-slide img{width:100%;height:100%;}
+	.swiper_con{width:100%;}
+	.swiper_con ul{padding:10px 0;}
+	.swiper_con ul li{width:30%;float:left;
+		text-align:center;
+		margin-left:2.5%;
+		margin-top:8px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+		background:#fff;}
+	.swiper_con ul li img{width:59px;height:59px;}
+	.swiper_con ul li a{display:block;margin:8px 0 0 0;}
+	.swiper_con ul li span{display:block;color:#4e4e4e;}
+	.swiper-slide p{position:absolute;bottom:10px;left:50%;width:200px;margin-left:-100px;text-align:center;}
+	.close_box{position:fixed;right:10px;bottom:100px;width:50px;height:50px;}
+	.close_box a{display:block;color:#fff;background:#2cb2ff;width:100%;height:100%;text-align:center;line-height:25px;}
+	
+	.add_box{width:100%;padding:10px 0;}
+	.add_box ul{width:94%;margin:0 auto;}
+	.add_box ul li{padding:8px 0 8px 20px;background:#fff;;background-size:14px 14px;padding-left:20px;font-size:14px;color:#4e4e4e;margin-top:5px;border-radius:3px;}
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <if condition="isset($slideshowlist[0][title])">
+            <div class="swiper-slide"><a href="{$slideshowlist.0.url}"><img src="__PUBLIC__{$slideshowlist.0.pic}"></a><p>{$slideshowlist.0.title}</p></div>
+            </if>
+
+            <if condition="isset($slideshowlist[0][title])">
+            <div class="swiper-slide"><a href="{$slideshowlist.1.url}"><img src="__PUBLIC__{$slideshowlist.1.pic}"></a><p>{$slideshowlist.1.title}</p></div>
+            </if>
+
+            <if condition="isset($slideshowlist[0][title])">
+            <div class="swiper-slide"><a href="{$slideshowlist.2.url}"><img src="__PUBLIC__{$slideshowlist.2.pic}"></a><p>{$slideshowlist.2.title}</p></div>
+            </if>
+
+            <if condition="isset($slideshowlist[0][title])">
+            <div class="swiper-slide"><a href="{$slideshowlist.3.url}"><img src="__PUBLIC__{$slideshowlist.3.pic}"></a><p>{$slideshowlist.3.title}</p></div>
+            </if>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+    </div>
+	<div class="swiper_con">
+    	<ul class="cf">
+
+
+            <if condition="isset($buttonlist[0][title])">
+        	<li>
+            	<a href="{$buttonlist.0.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/lisimg1.png">
+                    <span>{$buttonlist.0.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[1][title])">
+            <li>
+            	<a href="{$buttonlist.1.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/lisimg2.png">
+                    <span>{$buttonlist.1.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[2][title])">
+            <li>
+            	<a href="{$buttonlist.2.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/lisimg3.png">
+                    <span>{$buttonlist.2.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[3][title])">
+            <li>
+            	<a href="{$buttonlist.3.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/lisimg4.png">
+                    <span>{$buttonlist.3.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[4][title])">
+            <li>
+            	<a href="{$buttonlist.4.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/lisimg5.png">
+                    <span>{$buttonlist.4.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[5][title])">
+            <li>
+            	<a href="{$buttonlist.5.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/lisimg6.png">
+                    <span>{$buttonlist.5.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[6][title])">
+            <li>
+            	<a href="{$buttonlist.6.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/wm.png">
+                    <span>{$buttonlist.6.title}</span>
+                </a>
+            </li>
+            </if>
+
+            <if condition="isset($buttonlist[7][title])">
+            <li>
+            	<a href="{$buttonlist.7.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/cz.png">
+                    <span>{$buttonlist.7.title}</span>
+                </a>
+            </li>
+            </if>
+            <if condition="isset($buttonlist[8][title])">
+            <li>
+            	<a href="{$buttonlist.8.url}">
+                	<img src="__PUBLIC__/qt/template/template4/images/dj.png">
+                    <span>{$buttonlist.8.title}</span>
+                </a>
+            </li>
+            </if>
+
+        </ul>
+    </div>
+	<div class="close_box">
+		<a href="{:U('deldata')}" class="close_btn">解除<br>绑定</a>
+	</div>
+	
+	<div class="add_box">
+    	<ul>
+        	<li>城市地区：{$officelist.place}</li>
+            <li>机构名称：{$officelist.oname}</li>
+            <li>电话：{$officelist.phone}</li>
+            <li>地址：{$officelist.address}</li>
+            <li>邮编：{$officelist.postalcode}</li>
+        </ul>
+    </div>
+	
+    
+	
+    <!-- Swiper JS -->
+    <script src="__PUBLIC__/qt/template/template4/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 5500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模板2</title>
+</head>
+<body>
+
+<a href="{:U('deldata')}">解除绑定</a>
+
+	网点信息<hr>
+	<br>城市地区:{$officelist.place}
+	<br>机构名称:{$officelist.oname}
+	<br>电话:{$officelist.phone}
+	<br>地址:{$officelist.address}
+	<br>邮政编码:{$officelist.postalcode}
+	<hr>
+	轮播图1名字:{$slideshowlist.0.title}
+	轮播图1图片:<img src="__PUBLIC__{$slideshowlist.0.pic}" width="120" height="50">
+	轮播图1跳转连接:{$slideshowlist.0.url}
+	<hr>
+	轮播图2名字:{$slideshowlist.1.title}
+	轮播图2图片:<img src="__PUBLIC__{$slideshowlist.1.pic}" width="120" height="50">
+	轮播图2跳转连接:{$slideshowlist.1.url}
+	<hr>
+	轮播图3名字:{$slideshowlist.2.title}
+	轮播图3图片:<img src="__PUBLIC__{$slideshowlist.2.pic}" width="120" height="50">
+	轮播图3跳转连接:{$slideshowlist.2.url}
+	<hr>
+	轮播图4名字:{$slideshowlist.3.title}
+	轮播图4图片:<img src="__PUBLIC__{$slideshowlist.3.pic}" width="120" height="50">
+	轮播图4跳转连接:{$slideshowlist.3.url}
+
+	<hr>
+	<hr>
+	<hr>
+	按钮1名字:{$buttonlist.0.title}
+	按钮1跳转连接:{$buttonlist.0.url}
+	<hr>
+	按钮2名字:{$buttonlist.1.title}
+	按钮2跳转连接:{$buttonlist.1.url}
+	<hr>
+	按钮3名字:{$buttonlist.2.title}
+	按钮3跳转连接:{$buttonlist.2.url}
+	<hr>
+	按钮4名字:{$buttonlist.3.title}
+	按钮4跳转连接:{$buttonlist.3.url}
+	<hr>
+	按钮5名字:{$buttonlist.4.title}
+	按钮5跳转连接:{$buttonlist.4.url}
+	<hr>
+	按钮6名字:{$buttonlist.5.title}
+	按钮6跳转连接:{$buttonlist.5.url}
+	<hr>
+	按钮7名字:{$buttonlist.6.title}
+	按钮7跳转连接:{$buttonlist.6.url}
+	<hr>
+	按钮8名字:{$buttonlist.7.title}
+	按钮8跳转连接:{$buttonlist.7.url}
+</body>
+</html> -->

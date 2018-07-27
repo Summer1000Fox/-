@@ -1,0 +1,79 @@
+[ 2017-04-24T09:39:50+08:00 ] ::1 /QHKJ/pf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-24T09:44:59+08:00 ] ::1 /QHKJ/pf/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-24T09:53:11+08:00 ] ::1 /QHKJ/pf/Ht
+ERR: 无法加载控制器:Index
+
+[ 2017-04-24T11:59:58+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T11:59:59+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:00+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:00+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786?i=0.9166218104311147
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:01+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786?i=0.9166218104311147?i=0.3511737529428416
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:01+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786?i=0.9166218104311147?i=0.3511737529428416?i=0.8519106358811968
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:01+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786?i=0.9166218104311147?i=0.3511737529428416?i=0.8519106358811968?i=0.8569183558822268
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:01+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786?i=0.9166218104311147?i=0.3511737529428416?i=0.8519106358811968?i=0.8569183558822268?i=0.37790962886951907
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T12:00:01+08:00 ] ::1 /QHKJ/pf/home/Login/yzm.html?i=0.5723843058843455?i=0.9255369117662786?i=0.9166218104311147?i=0.3511737529428416?i=0.8519106358811968?i=0.8569183558822268?i=0.37790962886951907?i=0.4476942519204583
+ERR: 无法加载控制器:Login
+
+[ 2017-04-24T17:46:27+08:00 ] ::1 /QHKJ/pf/Ht/login/repasscl.html
+ERR: 模板不存在:./App/Ht/View//Ht/login/index/state/4.html
+
+[ 2017-04-24T17:46:49+08:00 ] ::1 /QHKJ/pf/Ht/login/repasscl.html
+ERR: 模板不存在:./App/Ht/View//index/state/4.html
+
+[ 2017-04-24T17:47:12+08:00 ] ::1 /QHKJ/pf/Ht/login/repasscl.html
+ERR: 模板不存在:./App/Ht/View//index/state/4.html
+
+[ 2017-04-24T17:47:36+08:00 ] ::1 /QHKJ/pf/Ht/login/repasscl.html
+ERR: 模板不存在:./App/Ht/View/login/index/state/4.html
+

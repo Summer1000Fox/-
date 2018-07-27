@@ -1,0 +1,39 @@
+[ 2017-05-03T00:30:36+08:00 ] ::1 /QHKJ/pf/Ht/Office/add.html
+ERR: 非法操作:add
+
+[ 2017-05-03T09:38:30+08:00 ] ::1 /QHKJ/pf/Ht/Office/selecttemplate/id/1.html
+ERR: 非法操作:selecttemplate
+
+[ 2017-05-03T10:23:13+08:00 ] ::1 /QHKJ/pf/Ht/Office/editwebsite/id/177.html
+ERR: 非法操作:editwebsite
+
+[ 2017-05-03T10:35:55+08:00 ] ::1 /QHKJ/pf/Ht/Office/editwebsite/id/179.html
+ERR: 非法操作:editwebsite
+
+[ 2017-05-03T12:45:05+08:00 ] ::1 /QHKJ/pf/Ht/Office/editwebsite/id/179.html
+ERR: 非法操作:editwebsite
+
+[ 2017-05-03T12:59:19+08:00 ] ::1 /QHKJ/pf/Ht/type/index.html
+ERR: 无法加载控制器:Type
+
+[ 2017-05-03T13:00:44+08:00 ] ::1 /QHKJ/pf/Ht/Resource/slideshow.html
+ERR: 无法加载控制器:Resource
+
+[ 2017-05-03T13:14:03+08:00 ] ::1 /QHKJ/pf/Ht/Resource/slideshow.html
+ERR: 无法加载控制器:Resource
+
+[ 2017-05-03T13:24:00+08:00 ] ::1 /QHKJ/pf/Ht/Resource/button.html
+ERR: 模板不存在:./App/Ht/View/Resource/button.html
+
+[ 2017-05-03T13:24:06+08:00 ] ::1 /QHKJ/pf/Ht/Resource/adminlist.html?title=
+ERR: 非法操作:adminlist
+
+[ 2017-05-03T16:28:32+08:00 ] ::1 /QHKJ/pf/Ht/Resource/adminlist.html?title=
+ERR: 非法操作:adminlist
+
+[ 2017-05-03T16:30:17+08:00 ] ::1 /QHKJ/pf/Ht/Resource/adminlist.html?title=7
+ERR: 非法操作:adminlist
+
+[ 2017-05-03T23:05:49+08:00 ] ::1 /QHKJ/pf/Ht/Resource/createwebsite.html
+ERR: 非法操作:createwebsite
+

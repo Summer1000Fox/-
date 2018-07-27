@@ -1,0 +1,15 @@
+[ 2017-05-04T11:09:18+08:00 ] ::1 /QHKJ/pf/Ht/Resource/createwebsite.html
+ERR: 非法操作:createwebsite
+
+[ 2017-05-04T11:42:02+08:00 ] ::1 /QHKJ/pf/Ht/Resource/createwebsite.html
+ERR: 非法操作:createwebsite
+
+[ 2017-05-04T11:57:58+08:00 ] ::1 /QHKJ/pf/Ht/Resource/acpass.html
+ERR: 非法操作:acpass
+
+[ 2017-05-04T13:15:29+08:00 ] ::1 /QHKJ/pf/Ht/material/index.html
+ERR: 无法加载控制器:Material
+
+[ 2017-05-04T14:26:01+08:00 ] ::1 /QHKJ/pf/Ht/Resource/adminchangepass/id/20.html
+ERR: 非法操作:adminchangepass
+

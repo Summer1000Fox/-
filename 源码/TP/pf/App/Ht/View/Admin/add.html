@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>建设银行</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/ht/format/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="__PUBLIC__/ht/format/css/metisMenu.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/ht/format/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="__PUBLIC__/ht/format/css/font-awesome.css" rel="stylesheet" type="text/css">
+	
+	<style>
+		textarea{margin:10px 0;}
+		img{margin:10px 0; padding:5px; border:2px solid grey; border-radius:10px;}
+	</style>
+    
+</head>
+
+<body>
+
+    <div id="wrapper"> 
+		<include file="Public/navigate" />  
+        <!-- Navigation -->
+		
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">添加管理员</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            添加管理员
+                        </div>
+                        <div class="panel-body">
+							<div class="table-responsive">
+							<form action="{:U('aaadmin')}" method="post" enctype="multipart/form-data">
+							<table class="table table-striped table-bordered table-hover">							
+								<tr>
+									<td>管理员名</td>
+									<td><input type="text" name='aname' class="form-control"></td>
+								</tr>
+								<tr>
+									<td>密码</td>
+									<td><input type="password" name='pass1' class="form-control"></td>
+								</tr>
+								<tr>
+									<td>确认密码</td>
+									<td><input type="password" name='pass2' class="form-control"></td>
+								</tr>
+                                <!-- {$mrankhtml} -->
+                                <div id="addzhihangadmin">
+                                    <tr>
+                                        <td>添加支行管理员</td>
+                                        <td>
+                                            <select name='iszhihang' id='' class='form-control'>
+                                                <option value=''>--如果想添加网点级管理员,请忽视此项--</option>
+                                                <notempty name='mcodefrontlist'>
+                                                    <foreach name = 'mcodefrontlist' item = 'mcodefrontlistval' >
+                                                        <option value='{$mcodefrontlistval}'>{$mcodefrontlistval}</option>
+                                                    </foreach>
+                                                <else />
+                                                    <option value=''  disabled='disabled'>目前无可选支行</option>
+                                                </notempty>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </div>
+                                <tr>
+                                    <td>添加网点管理员</td>
+                                    <td>
+                                        <select name="admincode" id="" class="form-control">
+                                            <option value="">--如果想添加二级行管理员,请忽视此项--</option>
+                                            <notempty name="officelist">
+                                                <!-- <input type="hidden" name='oname' value="{$officelistval.oname}"> -->
+                                                <foreach name = "officelist" item = "officelistval" >
+                                                    <option value="{$officelistval.mcode}">{$officelistval.oname}</option>
+                                                </foreach>
+                                            <else />
+                                                <option value=""  disabled="disabled">目前无可选网点</option>
+                                            </notempty>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>管理范围</td>
+                                    <td><input type="text" name='mrange' class="form-control" placeholder="如果不填写,则默认为机构名称"></td>
+                                </tr>
+								<tr>
+									<td colspan="2" align="center">
+										<input type="submit" value="提交" class="btn btn-primary">
+										<input type="reset" value="清空" class="btn btn-primary">
+									</td>
+								</tr>
+							</table>
+							</form>
+							</div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    <include file="Public/end" />

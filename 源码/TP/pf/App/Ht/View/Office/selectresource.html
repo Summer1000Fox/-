@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>资源列表</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/ht/format/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="__PUBLIC__/ht/format/css/metisMenu.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/ht/format/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="__PUBLIC__/ht/format/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+	<style>
+		textarea{margin:10px 0; }
+		img{margin:10px 0; border:2px solid grey; border-radius:5px;}
+		.first,.end,.num,.prev,.next,.current{   
+			position: relative;
+			float: left;
+			padding: 6px 12px;
+			line-height: 1.42857143;
+			color: #337ab7;
+			text-decoration: none;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			margin-left:-1px;
+		}
+		.first{
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px
+		}
+		.end{
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px
+		}
+		.num{
+		    z-index: 2;
+			cursor: default;
+		}
+		.current{
+			background-color: #337ab7;
+			color: #fff;
+			border-color: #337ab7;
+		}
+	</style>
+	
+</head>
+
+<body>
+
+    <div id="wrapper"> 
+		<include file="Public/navigate" />  
+        <!-- Navigation -->
+		<form id="form_search" method="post" action="{:U(selectresource)}">
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">{$selectinfo}<p>如果资源不够,请添加资源并及时联系上级审核.</p></h1>
+                    
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+
+					
+
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            轮播图列表
+                        </div>
+                        <div class="panel-body">
+							<div class="table-responsive">
+								<table class="table table-striped table-bordered table-hover">
+									<tr class="h">
+										<td>选择</td>
+										<td>ID</td>
+										<td>标题</td>
+										<td>轮播图片</td>
+										<td>创建管理员id</td>
+										<td>优先级</td>
+										<td>管理码</td>
+										<td>url</td>
+									</tr>
+									<notempty name="slideshowlist">
+										<foreach name = "slideshowlist" item = "slideshowlistval" >
+											<tr>
+												<td><input type="checkbox" name="rids[]" value="{$slideshowlistval.rid}"  class="form-control"/></td>
+												<td>{$slideshowlistval.rid}</td>
+												<td>{$slideshowlistval.title}</td>
+												<td><a href="__PUBLIC__{$slideshowlistval.pic}"><img width="120px" height="50px" src="__PUBLIC__{$slideshowlistval.pic}" alt="{$buttonlistvalpic.pic}"></a></td>
+												<td>{$slideshowlistval.adminid}</td>
+												<td>{$slideshowlistval.priority}</td>
+												<td>{$slideshowlistval.rcode}</td>
+												<td><a href="http://{$slideshowlistval.url}">{$slideshowlistval.url}</a></td>
+											</tr>
+										</foreach>
+									<else />
+										<tr>
+											<td colspan="8">没有数据</td>
+										</tr>
+									</notempty>
+								</table>
+							</div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+
+					<div class="panel panel-primary">
+                        <div class="panel-heading">
+                            按钮列表
+                        </div>
+                        <div class="panel-body">
+                        	
+							<div class="table-responsive">
+							<table class="table table-striped table-bordered table-hover">
+								<tr class="h">
+									<td>选择</td>
+									<td>ID</td>
+									<td>标题</td>
+									<td>创建管理员id</td>
+									<td>优先级</td>
+									<td>管理码</td>
+									<td>url</td>
+								</tr>
+								<notempty name="buttonlist">
+									<foreach name = "buttonlist" item = "buttonlistval" >
+								<tr>
+									<td><input type="checkbox" name="ridb[]" value="{$buttonlistval.rid}"  class="form-control"/></td>
+									<td>{$buttonlistval.rid}</td>
+									<td>{$buttonlistval.title}</td>
+									<td>{$buttonlistval.adminid}</td>
+									<td>{$buttonlistval.priority}</td>
+									<td>{$buttonlistval.rcode}</td>
+									<td>
+										<a href="http://{$buttonlistval.url}">{$buttonlistval.url}</a>
+									</td>
+								</tr>
+								</foreach>
+								<else />
+								<tr>
+									<td colspan="8">没有数据</td>
+								</tr>
+								</notempty>
+							</table>
+							</div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+
+
+
+
+                    <input type="submit" value="创建微站" class="btn btn-primary" />
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+	</form>
+    <include file="Public/end" />

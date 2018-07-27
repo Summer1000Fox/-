@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>建设银行</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/ht/format/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="__PUBLIC__/ht/format/css/metisMenu.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/ht/format/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="__PUBLIC__/ht/format/css/font-awesome.css" rel="stylesheet" type="text/css">
+	
+	<style>
+		textarea{margin:10px 0;}
+		img{margin:10px 0; padding:5px; border:2px solid grey; border-radius:10px;}
+	</style>
+    
+</head>
+
+<body>
+
+    <div id="wrapper"> 
+		<include file="Public/navigate" />  
+        <!-- Navigation -->
+		
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">添加按钮</h1>
+                    <span>(注意:按钮图片由于考虑微站整体美观性暂时不会显示自行上传的图片)<br><br></span>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            添加按钮
+                        </div>
+                        <div class="panel-body">
+							<div class="table-responsive">
+							<form action="{:U('addbutton')}" method="post" enctype="multipart/form-data">
+							<table class="table table-striped table-bordered table-hover">							
+								<tr>
+                                    <td>按钮标题</td>
+                                    <td><input type="text" name='title' tabIndex="1" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>url</td>
+                                    <td><input type="text" name='url' tabIndex="2" class="form-control"></td>
+                                </tr>
+                                <tr>
+									<td>图片</td>
+									<td><input type="file" name='pic' tabIndex="3"  class="form-control" /></td>
+								</tr>
+								<tr>
+									<td>优先级</td>
+									<td><input type="input" name='priority' tabIndex="4" class="form-control"><br>省级管理员:1-10;支行管理员11-20;网点管理员21-99;</td>
+								</tr>
+                                <!-- <tr>
+                                    <td>显示在哪个支行</td>
+                                    <td>
+                                        <input type="checkbox" name="week[]" id="week1" value="1" />周一
+                                <input type="checkbox" name="week[]" id="week2" value="2"  />周二
+                                <input type="checkbox" name="week[]" id="week3" value="3"  />周三
+                                <input type="checkbox" name="week[]" id="week4" value="4"  />周四
+                                <input type="checkbox" name="week[]" id="week5" value="5"  />周五
+                                <input type="checkbox" name="week[]" id="week6" value="6"  />周六
+                                <input type="checkbox" name="week[]" id="week0" value="0" />周日   
+                                    </td>
+                                </tr> -->
+								<tr>
+									<td colspan="2" align="center">
+										<input type="submit" tabIndex="5" value="提交" class="btn btn-primary">
+										<input type="reset" value="清空" class="btn btn-primary">
+									</td>
+								</tr>
+							</table>
+							</form>
+							</div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    <include file="Public/end" />

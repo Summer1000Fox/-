@@ -1,0 +1,9 @@
+[ 2017-05-07T16:55:12+08:00 ] ::1 /QHKJ/pf/Ht/Resource/adminchangepass/id/3.html
+ERR: 非法操作:adminchangepass
+
+[ 2017-05-07T20:48:36+08:00 ] ::1 /QHKJ/pf/Ht/Resource/seearticle/id/45/adminid/13.html
+ERR: 非法操作:seearticle
+
+[ 2017-05-07T21:09:31+08:00 ] ::1 /QHKJ/pf/Ht/Resource/seearticle/id/45/adminid/13.html
+ERR: 模板不存在:./App/Ht/View/Resource/seearticle.html
+

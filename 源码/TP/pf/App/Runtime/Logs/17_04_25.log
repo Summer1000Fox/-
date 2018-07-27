@@ -1,0 +1,36 @@
+[ 2017-04-25T10:58:47+08:00 ] ::1 /QHKJ/pf/Ht/user/index.html
+ERR: 无法加载控制器:User
+
+[ 2017-04-25T11:02:31+08:00 ] ::1 /QHKJ/pf/Ht/user/index.html
+ERR: 无法加载控制器:User
+
+[ 2017-04-25T11:03:34+08:00 ] ::1 /QHKJ/pf/Ht/admin/list.html
+ERR: 非法操作:list
+
+[ 2017-04-25T11:03:38+08:00 ] ::1 /QHKJ/pf/Ht/admin/addadmin.html
+ERR: 非法操作:addadmin
+
+[ 2017-04-25T11:06:14+08:00 ] ::1 /QHKJ/pf/Ht/admin/addadmin.html
+ERR: 非法操作:addadmin
+
+[ 2017-04-25T11:06:19+08:00 ] ::1 /QHKJ/pf/Ht/admin/list.html
+ERR: 非法操作:list
+
+[ 2017-04-25T11:08:38+08:00 ] ::1 /QHKJ/pf/Ht/Admin/list.html
+ERR: 非法操作:list
+
+[ 2017-04-25T11:13:03+08:00 ] ::1 /QHKJ/pf/Ht/Admin/adminlist.html
+ERR: 模板不存在:./App/Ht/View/Admin/adminlist.html
+
+[ 2017-04-25T11:14:15+08:00 ] ::1 /QHKJ/pf/Ht/Admin/adminlist.html
+ERR: 模板不存在:./App/Ht/View/Ht/Admin/index.html
+
+[ 2017-04-25T11:15:12+08:00 ] ::1 /QHKJ/pf/Ht/Admin/adminlist.html
+ERR: 模板不存在:./App/Ht/View/../../Admin/index.html
+
+[ 2017-04-25T12:25:07+08:00 ] ::1 /QHKJ/pf/Ht/Admin/adminlist.html
+ERR: Think\Model:getAll方法不存在！
+
+[ 2017-04-25T12:25:26+08:00 ] ::1 /QHKJ/pf/Ht/Admin/adminlist.html
+ERR: 模板不存在:./App/Ht/View/Admin/adminlist.html
+

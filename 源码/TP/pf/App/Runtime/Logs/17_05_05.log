@@ -1,0 +1,42 @@
+[ 2017-05-05T08:08:07+08:00 ] ::1 /QHKJ/pf/Ht/material/index.html
+ERR: 无法加载控制器:Material
+
+[ 2017-05-05T11:04:01+08:00 ] ::1 /QHKJ/pf/Ht/Resource/'editslideshow/id/'.
+ERR: 非法操作:'editslideshow
+
+[ 2017-05-05T11:12:01+08:00 ] ::1 /QHKJ/pf/Ht/Resource/%7B:U('editslideshow',array('id'=%3E))%7D
+ERR: 非法操作:{:U('editslideshow',array('id'=>))}
+
+[ 2017-05-05T11:13:12+08:00 ] ::1 /QHKJ/pf/Ht/Resource/:U('editslideshow',array('id'=%3E))
+ERR: 非法操作::U('editslideshow',array('id'=>))
+
+[ 2017-05-05T11:13:58+08:00 ] ::1 /QHKJ/pf/Ht/Resource/:U('editslideshow',array('id'=%3E))
+ERR: 非法操作::U('editslideshow',array('id'=>))
+
+[ 2017-05-05T11:14:13+08:00 ] ::1 /QHKJ/pf/Ht/Resource/U('editslideshow',array('id'=%3E))
+ERR: 非法操作:U('editslideshow',array('id'=>))
+
+[ 2017-05-05T12:40:28+08:00 ] ::1 /QHKJ/pf/Ht/Resource/editslideshow.htmlArray
+ERR: 非法操作:editslideshow.htmlArray
+
+[ 2017-05-05T12:53:39+08:00 ] ::1 /QHKJ/pf/Ht/editslideshow/%3C.html
+ERR: 无法加载控制器:Editslideshow
+
+[ 2017-05-05T12:54:15+08:00 ] ::1 /QHKJ/pf/Ht/editslideshow/%3C.html
+ERR: 无法加载控制器:Editslideshow
+
+[ 2017-05-05T12:54:18+08:00 ] ::1 /QHKJ/pf/Ht/editslideshow/%3C.html
+ERR: 无法加载控制器:Editslideshow
+
+[ 2017-05-05T12:56:42+08:00 ] ::1 /QHKJ/pf/Ht/editslideshow/%3C.html
+ERR: 无法加载控制器:Editslideshow
+
+[ 2017-05-05T12:56:49+08:00 ] ::1 /QHKJ/pf/Ht/editslideshow/%3C.html
+ERR: 无法加载控制器:Editslideshow
+
+[ 2017-05-05T14:56:28+08:00 ] ::1 /QHKJ/pf/Ht/Resource/adminchangepass/id/37.html
+ERR: 非法操作:adminchangepass
+
+[ 2017-05-05T16:22:33+08:00 ] ::1 /QHKJ/pf/Ht/Resource/:U('delslideshow',array('id'=%3E$slideshowlistval[rid]))
+ERR: 非法操作::U('delslideshow',array('id'=>$slideshowlistval[rid]))
+

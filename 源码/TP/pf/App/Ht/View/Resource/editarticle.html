@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>建设银行</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="__PUBLIC__/ht/format/css/bootstrap.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="__PUBLIC__/ht/format/css/metisMenu.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="__PUBLIC__/ht/format/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="__PUBLIC__/ht/format/css/font-awesome.css" rel="stylesheet" type="text/css">
+	
+	<style>
+		textarea{margin:10px 0;}
+		img{margin:10px 0; padding:5px; border:2px solid grey; border-radius:10px;}
+	</style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ht/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ht/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="__PUBLIC__/ht/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper"> 
+		<include file="Public/navigate" />  
+        <!-- Navigation -->
+		
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">修改文章</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            修改文章
+                        </div>
+                        <div class="panel-body">
+							<div class="table-responsive">
+							<form action="{:U('editarticle?adminid='.$_SESSION['xql']['resource']['resourceadminid'])}" method="post" enctype="multipart/form-data">
+                            <foreach name = "articlelist" item = "articlelistval" >
+                            
+                            <table class="table table-striped table-bordered table-hover">
+							<input type="hidden" name="rid" value="{$articlelistval.rid}">
+
+								<tr>
+									<td>标题</td>
+									<td><input type="text" name='title'  value="{$articlelistval.title}" class="form-control"></td>
+								</tr>
+								<tr>
+                                    <td>URL</td>
+                                    <td><input type="text" name='url'  value="{$articlelistval.url}" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>封面图片</td>
+                                    <td><input type="file" name='pic' class="form-control"><a href="__PUBLIC__{$articlelistval.pic}"><img width="240px" height="100px" src="__PUBLIC__{$articlelistval.pic}" alt="{$articlelistval.title}"></a></td>
+                                </tr>
+                                <tr>
+                                    <td>优先级</td>
+                                    <td><input type="text" name='priority'  value="{$articlelistval.priority}" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>内容</td>
+                                    <td width="90%">
+                                        <script id="editor" type="text/plain"  name="content" style="height:500px;">{$articlelistval.content}</script>
+                                        <script type="text/javascript">
+                                            var ue = UE.getEditor('editor');
+                                        </script>
+
+                                    </td>
+                                </tr>
+                                <tr>
+									<td colspan="2" align="center">
+										<input type="submit" value="修改" class="btn btn-primary">
+									</td>
+								</tr>
+							</table>
+                            </foreach>
+							</form>
+							</div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    <include file="Public/end" />

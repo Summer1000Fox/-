@@ -1,0 +1,18 @@
+[ 2017-05-12T04:56:03+08:00 ] 101.226.125.116 /TP/pf/Home/Judge/getinfo.html
+ERR: 缺少参数 APP_ID 和 APP_SECRET!
+
+[ 2017-05-12T13:15:08+08:00 ] 119.119.55.203 /TP/pf/Ht/material/index.html
+ERR: 无法加载控制器:Material
+
+[ 2017-05-12T13:15:18+08:00 ] 140.207.124.105 /TP/pf/Ht/material/index.html
+ERR: 无法加载控制器:Material
+
+[ 2017-05-12T13:15:20+08:00 ] 119.119.55.203 /TP/pf/Ht/material/index.html
+ERR: 无法加载控制器:Material
+
+[ 2017-05-12T13:15:27+08:00 ] 119.119.55.203 /TP/pf/Ht/Office/add.html
+ERR: 非法操作:add
+
+[ 2017-05-12T13:45:55+08:00 ] 119.119.55.203 /TP/pf/Ht/Office/add.html
+ERR: 非法操作:add
+

@@ -1,0 +1,48 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+<meta name="format-detection" content="telephone=no" />
+<title>登录界面</title>
+<style>
+
+html,body{margin:0;padding:0;width:100%;height:100%;}
+
+h1{text-align:center;font-size:16px;text-align: center;}
+.li_box
+
+
+
+
+</style>
+</head>
+<body>
+<div class="wrap">
+	<h1>个人金融后台登录</h1>
+	<form action="<?php echo U('login/login');?>" method="post">
+		<div class="li_box">
+			用户名:<input type="text" name="aname">
+		</div>
+		<div class="li_box">
+			密　码:<input type="password" name="pass">
+		</div>
+			验证码:<input type="text" name="authcode">
+			<br>
+			<img src="<?php echo U('/Ht/Login/yzm');?>" width="150" height="100"  onclick="this.src=this.src+'?i='+Math.random()" style="margin-top:3px; margin-left:; border-radius:10px;">
+			<br>
+			
+			<?php if($_GET['state'] == 1): ?>两次输入密码不一致
+			<?php elseif($_GET['state'] == 2): ?> 
+				验证码错误
+			<?php elseif($_GET['state'] == 3): ?> 
+				用户名或密码错误
+			<?php elseif($_GET['state'] == 4): ?> 
+				密码修改成功,请使用新密码登录<?php endif; ?>
+
+			<br>
+			<input type="submit" value="登录">
+	</form>
+</div>	
+</body>
+</html>
